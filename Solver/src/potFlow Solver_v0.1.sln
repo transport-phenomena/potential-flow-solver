@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "potFlow Solver_v0.1", "potFlow Solver_v0.1.csproj", "{F98696AD-4965-478C-A74E-88C52EC8C7C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F98696AD-4965-478C-A74E-88C52EC8C7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98696AD-4965-478C-A74E-88C52EC8C7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98696AD-4965-478C-A74E-88C52EC8C7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98696AD-4965-478C-A74E-88C52EC8C7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4A8D91D-B35F-4195-993E-F8CF63018A7F}
+	EndGlobalSection
+EndGlobal

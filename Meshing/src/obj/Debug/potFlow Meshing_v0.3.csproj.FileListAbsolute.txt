@@ -1,0 +1,70 @@
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe.config
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.pdb
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.AssemblyReference.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Form1.resources
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Properties.Resources.resources
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.GenerateResource.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.CoreCompileInputs.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.exe
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.pdb
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potflowMeshing_home\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe.config
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potflowMeshing_home\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potflowMeshing_home\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.pdb
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potflowMeshing_home\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.AssemblyReference.cache
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potflowMeshing_home\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Form1.resources
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potflowMeshing_home\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Properties.Resources.resources
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potflowMeshing_home\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.GenerateResource.cache
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potflowMeshing_home\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.CoreCompileInputs.cache
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potflowMeshing_home\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.exe
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potflowMeshing_home\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.pdb
+D:\nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3_latest\bin\Debug\potFlow Meshing_v0.3.exe.config
+D:\nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3_latest\bin\Debug\potFlow Meshing_v0.3.exe
+D:\nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3_latest\bin\Debug\potFlow Meshing_v0.3.pdb
+D:\nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3_latest\obj\Debug\potFlow Meshing_v0.3.csproj.AssemblyReference.cache
+D:\nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3_latest\obj\Debug\potFlow_Meshing_v0._3.Form1.resources
+D:\nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3_latest\obj\Debug\potFlow_Meshing_v0._3.Properties.Resources.resources
+D:\nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3_latest\obj\Debug\potFlow Meshing_v0.3.csproj.GenerateResource.cache
+D:\nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3_latest\obj\Debug\potFlow Meshing_v0.3.csproj.CoreCompileInputs.cache
+D:\nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3_latest\obj\Debug\potFlow Meshing_v0.3.exe
+D:\nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing_v0.3_latest\obj\Debug\potFlow Meshing_v0.3.pdb
+C:\Users\nejc.vovk\OneDrive - Univerza v Mariboru\NUMERIČNO MODELIRANJE_VAJE\potencialni_tok_projekt\potFlow\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe.config
+C:\Users\nejc.vovk\OneDrive - Univerza v Mariboru\NUMERIČNO MODELIRANJE_VAJE\potencialni_tok_projekt\potFlow\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe
+C:\Users\nejc.vovk\OneDrive - Univerza v Mariboru\NUMERIČNO MODELIRANJE_VAJE\potencialni_tok_projekt\potFlow\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.pdb
+C:\Users\nejc.vovk\OneDrive - Univerza v Mariboru\NUMERIČNO MODELIRANJE_VAJE\potencialni_tok_projekt\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.AssemblyReference.cache
+C:\Users\nejc.vovk\OneDrive - Univerza v Mariboru\NUMERIČNO MODELIRANJE_VAJE\potencialni_tok_projekt\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Form1.resources
+C:\Users\nejc.vovk\OneDrive - Univerza v Mariboru\NUMERIČNO MODELIRANJE_VAJE\potencialni_tok_projekt\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Properties.Resources.resources
+C:\Users\nejc.vovk\OneDrive - Univerza v Mariboru\NUMERIČNO MODELIRANJE_VAJE\potencialni_tok_projekt\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.GenerateResource.cache
+C:\Users\nejc.vovk\OneDrive - Univerza v Mariboru\NUMERIČNO MODELIRANJE_VAJE\potencialni_tok_projekt\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.CoreCompileInputs.cache
+C:\Users\nejc.vovk\OneDrive - Univerza v Mariboru\NUMERIČNO MODELIRANJE_VAJE\potencialni_tok_projekt\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.exe
+C:\Users\nejc.vovk\OneDrive - Univerza v Mariboru\NUMERIČNO MODELIRANJE_VAJE\potencialni_tok_projekt\potFlow\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.pdb
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe.config
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.pdb
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.AssemblyReference.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Form1.resources
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Properties.Resources.resources
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.GenerateResource.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.CoreCompileInputs.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.exe
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.pdb
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\creating final\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe.config
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\creating final\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\creating final\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.pdb
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\creating final\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.AssemblyReference.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\creating final\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Form1.resources
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\creating final\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Properties.Resources.resources
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\creating final\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.GenerateResource.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\creating final\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.CoreCompileInputs.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\creating final\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.exe
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Meshing\creating final\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.pdb
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe.config
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.exe
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\bin\Debug\potFlow Meshing_v0.3.pdb
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.AssemblyReference.cache
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Form1.resources
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow_Meshing_v0._3.Properties.Resources.resources
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.GenerateResource.cache
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.CoreCompileInputs.cache
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.exe
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.pdb

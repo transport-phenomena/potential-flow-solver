@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "potFlow Meshing_v0.3", "potFlow Meshing_v0.3.csproj", "{7958C527-6C41-4606-9613-A63744FFDEAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7958C527-6C41-4606-9613-A63744FFDEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7958C527-6C41-4606-9613-A63744FFDEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7958C527-6C41-4606-9613-A63744FFDEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7958C527-6C41-4606-9613-A63744FFDEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {247B1BD4-7C26-4CFE-9B9E-C74E6A515F12}
+	EndGlobalSection
+EndGlobal

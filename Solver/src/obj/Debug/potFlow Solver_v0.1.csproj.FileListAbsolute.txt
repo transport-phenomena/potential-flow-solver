@@ -1,0 +1,40 @@
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\bin\Debug\potFlow Solver_v0.1.exe.config
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\bin\Debug\potFlow Solver_v0.1.exe
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\bin\Debug\potFlow Solver_v0.1.pdb
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.csproj.AssemblyReference.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow_Solver_v0._1.Form1.resources
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow_Solver_v0._1.Properties.Resources.resources
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.csproj.GenerateResource.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.csproj.CoreCompileInputs.cache
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.exe
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.pdb
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\bin\Debug\MathNet.Numerics.dll
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\bin\Debug\MathNet.Numerics.xml
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\bin\Debug\potFlow Solver_v0.1.exe.config
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\bin\Debug\potFlow Solver_v0.1.exe
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\bin\Debug\potFlow Solver_v0.1.pdb
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\bin\Debug\MathNet.Numerics.dll
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\bin\Debug\MathNet.Numerics.xml
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.csproj.AssemblyReference.cache
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow_Solver_v0._1.Form1.resources
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow_Solver_v0._1.Properties.Resources.resources
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.csproj.GenerateResource.cache
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.csproj.CoreCompileInputs.cache
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.exe
+C:\Users\vovkn\OneDrive\Desktop\potencialni tok_PROJEKT\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.pdb
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.csproj.CopyComplete
+D:\Nejc\Documents\MAG\potencialni tok preko profilov PROJEKT\potFlow\potFlow Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.g.resources
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\bin\Debug\potFlow Solver_v0.1.exe.config
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\bin\Debug\potFlow Solver_v0.1.exe
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\bin\Debug\potFlow Solver_v0.1.pdb
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\bin\Debug\MathNet.Numerics.dll
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\bin\Debug\MathNet.Numerics.xml
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.csproj.AssemblyReference.cache
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.g.resources
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\obj\Debug\potFlow_Solver_v0._1.Form1.resources
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\obj\Debug\potFlow_Solver_v0._1.Properties.Resources.resources
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.csproj.GenerateResource.cache
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.csproj.CoreCompileInputs.cache
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.csproj.CopyComplete
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.exe
+D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Solver\potFlow Solver_v0.1\obj\Debug\potFlow Solver_v0.1.pdb

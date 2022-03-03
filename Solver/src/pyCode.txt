@@ -1,0 +1,413 @@
+﻿# trace generated using paraview version 5.10.0
+#import paraview
+#paraview.compatibility.major = 5
+#paraview.compatibility.minor = 10
+
+#### import the simple module from the paraview
+from paraview.simple import *
+#### disable automatic camera reset on 'Show'
+paraview.simple._DisableFirstRenderCameraReset()
+
+# create a new 'XML Unstructured Grid Reader'
+result = path_to_vtu_file
+result.PointArrayStatus = ['u', 'psi', 'ux', 'uy', 'p']
+
+# Properties modified on result
+result.TimeArray = 'None'
+
+# get active view
+renderView1 = GetActiveViewOrCreate('RenderView')
+
+# show data in view
+resultDisplay = Show(result, renderView1, 'UnstructuredGridRepresentation')
+
+# trace defaults for the display properties.
+resultDisplay.Representation = 'Surface'
+resultDisplay.ColorArrayName = [None, '']
+resultDisplay.SelectTCoordArray = 'None'
+resultDisplay.SelectNormalArray = 'None'
+resultDisplay.SelectTangentArray = 'None'
+resultDisplay.OSPRayScaleArray = 'p'
+resultDisplay.OSPRayScaleFunction = 'PiecewiseFunction'
+resultDisplay.SelectOrientationVectors = 'u'
+resultDisplay.ScaleFactor = 0.19800000190734865
+resultDisplay.SelectScaleArray = 'None'
+resultDisplay.GlyphType = 'Arrow'
+resultDisplay.GlyphTableIndexArray = 'None'
+resultDisplay.GaussianRadius = 0.009900000095367432
+resultDisplay.SetScaleArray = ['POINTS', 'p']
+resultDisplay.ScaleTransferFunction = 'PiecewiseFunction'
+resultDisplay.OpacityArray = ['POINTS', 'p']
+resultDisplay.OpacityTransferFunction = 'PiecewiseFunction'
+resultDisplay.DataAxesGrid = 'GridAxesRepresentation'
+resultDisplay.PolarAxes = 'PolarAxesRepresentation'
+resultDisplay.ScalarOpacityUnitDistance = 0.06614276621224602
+resultDisplay.OpacityArrayName = ['POINTS', 'p']
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+resultDisplay.OSPRayScaleFunction.Points = [293.1499938964844, 0.0, 0.5, 0.0, 913.1500244140625, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+resultDisplay.ScaleTransferFunction.Points = [-2341.9892578125, 0.0, 0.5, 0.0, 1343.5504150390625, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+resultDisplay.OpacityTransferFunction.Points = [-2341.9892578125, 0.0, 0.5, 0.0, 1343.5504150390625, 1.0, 0.5, 0.0]
+
+# reset view to fit data
+renderView1.ResetCamera(False)
+
+#changing interaction mode based on data extents
+renderView1.InteractionMode = '2D'
+renderView1.CameraPosition = [0.5, 0.0, 10000.0]
+renderView1.CameraFocalPoint = [0.5, 0.0, 0.0]
+
+# get the material library
+materialLibrary1 = GetMaterialLibrary()
+
+# update the view to ensure updated data information
+renderView1.Update()
+
+# set scalar coloring
+ColorBy(resultDisplay, ('POINTS', 'u', 'Magnitude'))
+
+# rescale color and/or opacity maps used to include current data range
+resultDisplay.RescaleTransferFunctionToDataRange(True, False)
+
+# show color bar/color legend
+resultDisplay.SetScalarBarVisibility(renderView1, True)
+
+# get color transfer function/color map for 'u'
+uLUT = GetColorTransferFunction('u')
+
+# get opacity transfer function/opacity map for 'u'
+uPWF = GetOpacityTransferFunction('u')
+
+# rescale color and/or opacity maps used to exactly fit the current data range
+resultDisplay.RescaleTransferFunctionToDataRange(False, True)
+
+# get layout
+layout1 = GetLayout()
+
+# layout/tab size in pixels
+layout1.SetSize(1612, 552)
+
+# current camera placement for renderView1
+renderView1.InteractionMode = '2D'
+renderView1.CameraPosition = [0.5, 0.0, 10000.0]
+renderView1.CameraFocalPoint = [0.5, 0.0, 0.0]
+renderView1.CameraParallelScale = 0.5153164829835543
+
+# save screenshot
+SaveScreenshot(path_to_pngFile)
+
+# set scalar coloring
+ColorBy(resultDisplay, ('POINTS', 'ux'))
+
+# Hide the scalar bar for this color map if no visible data is colored by it.
+HideScalarBarIfNotNeeded(uLUT, renderView1)
+
+# rescale color and/or opacity maps used to include current data range
+resultDisplay.RescaleTransferFunctionToDataRange(True, False)
+
+# show color bar/color legend
+resultDisplay.SetScalarBarVisibility(renderView1, True)
+
+# get color transfer function/color map for 'ux'
+uxLUT = GetColorTransferFunction('ux')
+
+# get opacity transfer function/opacity map for 'ux'
+uxPWF = GetOpacityTransferFunction('ux')
+
+# rescale color and/or opacity maps used to exactly fit the current data range
+resultDisplay.RescaleTransferFunctionToDataRange(False, True)
+
+# layout/tab size in pixels
+layout1.SetSize(1612, 552)
+
+# current camera placement for renderView1
+renderView1.InteractionMode = '2D'
+renderView1.CameraPosition = [0.5, 0.0, 10000.0]
+renderView1.CameraFocalPoint = [0.5, 0.0, 0.0]
+renderView1.CameraParallelScale = 0.5153164829835543
+
+# save screenshot
+SaveScreenshot(path_to_pngFile)
+
+# set scalar coloring
+ColorBy(resultDisplay, ('POINTS', 'uy'))
+
+# Hide the scalar bar for this color map if no visible data is colored by it.
+HideScalarBarIfNotNeeded(uxLUT, renderView1)
+
+# rescale color and/or opacity maps used to include current data range
+resultDisplay.RescaleTransferFunctionToDataRange(True, False)
+
+# show color bar/color legend
+resultDisplay.SetScalarBarVisibility(renderView1, True)
+
+# get color transfer function/color map for 'uy'
+uyLUT = GetColorTransferFunction('uy')
+
+# get opacity transfer function/opacity map for 'uy'
+uyPWF = GetOpacityTransferFunction('uy')
+
+# rescale color and/or opacity maps used to exactly fit the current data range
+resultDisplay.RescaleTransferFunctionToDataRange(False, True)
+
+# layout/tab size in pixels
+layout1.SetSize(1612, 552)
+
+# current camera placement for renderView1
+renderView1.InteractionMode = '2D'
+renderView1.CameraPosition = [0.5, 0.0, 10000.0]
+renderView1.CameraFocalPoint = [0.5, 0.0, 0.0]
+renderView1.CameraParallelScale = 0.5153164829835543
+
+# save screenshot
+SaveScreenshot(path_to_pngFile)
+
+# set scalar coloring
+ColorBy(resultDisplay, ('POINTS', 'p'))
+
+# Hide the scalar bar for this color map if no visible data is colored by it.
+HideScalarBarIfNotNeeded(uyLUT, renderView1)
+
+# rescale color and/or opacity maps used to include current data range
+resultDisplay.RescaleTransferFunctionToDataRange(True, False)
+
+# show color bar/color legend
+resultDisplay.SetScalarBarVisibility(renderView1, True)
+
+# get color transfer function/color map for 'p'
+pLUT = GetColorTransferFunction('p')
+
+# get opacity transfer function/opacity map for 'p'
+pPWF = GetOpacityTransferFunction('p')
+
+# rescale color and/or opacity maps used to exactly fit the current data range
+resultDisplay.RescaleTransferFunctionToDataRange(False, True)
+
+# layout/tab size in pixels
+layout1.SetSize(1612, 552)
+
+# current camera placement for renderView1
+renderView1.InteractionMode = '2D'
+renderView1.CameraPosition = [0.5, 0.0, 10000.0]
+renderView1.CameraFocalPoint = [0.5, 0.0, 0.0]
+renderView1.CameraParallelScale = 0.5153164829835543
+
+# save screenshot
+SaveScreenshot(path_to_pngFile)
+
+# set scalar coloring
+ColorBy(resultDisplay, ('POINTS', 'psi'))
+
+# Hide the scalar bar for this color map if no visible data is colored by it.
+HideScalarBarIfNotNeeded(pLUT, renderView1)
+
+# rescale color and/or opacity maps used to include current data range
+resultDisplay.RescaleTransferFunctionToDataRange(True, False)
+
+# show color bar/color legend
+resultDisplay.SetScalarBarVisibility(renderView1, True)
+
+# get color transfer function/color map for 'psi'
+psiLUT = GetColorTransferFunction('psi')
+
+# get opacity transfer function/opacity map for 'psi'
+psiPWF = GetOpacityTransferFunction('psi')
+
+# layout/tab size in pixels
+layout1.SetSize(1612, 552)
+
+# current camera placement for renderView1
+renderView1.InteractionMode = '2D'
+renderView1.CameraPosition = [0.5, 0.0, 10000.0]
+renderView1.CameraFocalPoint = [0.5, 0.0, 0.0]
+renderView1.CameraParallelScale = 0.5153164829835543
+
+# save screenshot
+SaveScreenshot(path_to_pngFile)
+
+# turn off scalar coloring
+ColorBy(resultDisplay, None)
+
+# Hide the scalar bar for this color map if no visible data is colored by it.
+HideScalarBarIfNotNeeded(psiLUT, renderView1)
+
+# change solid color
+resultDisplay.AmbientColor = [0.0, 0.0, 0.0]
+resultDisplay.DiffuseColor = [0.0, 0.0, 0.0]
+
+# create a new 'Stream Tracer'
+streamTracer1 = StreamTracer(registrationName='StreamTracer1', Input=result,
+    SeedType='Line')
+streamTracer1.Vectors = ['POINTS', 'u']
+streamTracer1.MaximumStreamlineLength = 1.9800000190734863
+
+# init the 'Line' selected for 'SeedType'
+streamTracer1.SeedType.Point1 = [-0.49000000953674316, -0.49000000953674316, 0.0]
+streamTracer1.SeedType.Point2 = [1.4900000095367432, 0.49000000953674316, 0.0]
+
+# toggle 3D widget visibility (only when running from the GUI)
+Hide3DWidgets(proxy=streamTracer1.SeedType)
+
+# show data in view
+streamTracer1Display = Show(streamTracer1, renderView1, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+streamTracer1Display.Representation = 'Surface'
+streamTracer1Display.ColorArrayName = [None, '']
+streamTracer1Display.SelectTCoordArray = 'None'
+streamTracer1Display.SelectNormalArray = 'None'
+streamTracer1Display.SelectTangentArray = 'None'
+streamTracer1Display.OSPRayScaleArray = 'AngularVelocity'
+streamTracer1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+streamTracer1Display.SelectOrientationVectors = 'Normals'
+streamTracer1Display.ScaleFactor = 0.19800000190734865
+streamTracer1Display.SelectScaleArray = 'AngularVelocity'
+streamTracer1Display.GlyphType = 'Arrow'
+streamTracer1Display.GlyphTableIndexArray = 'AngularVelocity'
+streamTracer1Display.GaussianRadius = 0.009900000095367432
+streamTracer1Display.SetScaleArray = ['POINTS', 'AngularVelocity']
+streamTracer1Display.ScaleTransferFunction = 'PiecewiseFunction'
+streamTracer1Display.OpacityArray = ['POINTS', 'AngularVelocity']
+streamTracer1Display.OpacityTransferFunction = 'PiecewiseFunction'
+streamTracer1Display.DataAxesGrid = 'GridAxesRepresentation'
+streamTracer1Display.PolarAxes = 'PolarAxesRepresentation'
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+streamTracer1Display.OSPRayScaleFunction.Points = [293.1499938964844, 0.0, 0.5, 0.0, 913.1500244140625, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+streamTracer1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 1.1757813367477812e-38, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+streamTracer1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 1.1757813367477812e-38, 1.0, 0.5, 0.0]
+
+# hide data in view
+Hide(result, renderView1)
+
+# update the view to ensure updated data information
+renderView1.Update()
+
+# change solid color
+streamTracer1Display.AmbientColor = [0.0, 0.0, 0.0]
+streamTracer1Display.DiffuseColor = [0.0, 0.0, 0.0]
+
+# layout/tab size in pixels
+layout1.SetSize(1612, 552)
+
+# current camera placement for renderView1
+renderView1.InteractionMode = '2D'
+renderView1.CameraPosition = [0.5, 0.0, 10000.0]
+renderView1.CameraFocalPoint = [0.5, 0.0, 0.0]
+renderView1.CameraParallelScale = 0.5153164829835543
+
+# save screenshot
+SaveScreenshot(path_to_pngFile)
+
+# hide data in view
+Hide(streamTracer1, renderView1)
+
+# set active source
+SetActiveSource(result)
+
+# create a new 'Glyph'
+glyph1 = Glyph(registrationName='Glyph1', Input=result,
+    GlyphType='Arrow')
+glyph1.OrientationArray = ['POINTS', 'u']
+glyph1.ScaleArray = ['POINTS', 'No scale array']
+glyph1.ScaleFactor = 0.19800000190734865
+glyph1.GlyphTransform = 'Transform2'
+
+# Properties modified on glyph1
+glyph1.ScaleFactor = 0.06732000064849855
+glyph1.MaximumNumberOfSamplePoints = 2000
+
+# show data in view
+glyph1Display = Show(glyph1, renderView1, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+glyph1Display.Representation = 'Surface'
+glyph1Display.ColorArrayName = [None, '']
+glyph1Display.SelectTCoordArray = 'None'
+glyph1Display.SelectNormalArray = 'None'
+glyph1Display.SelectTangentArray = 'None'
+glyph1Display.OSPRayScaleArray = 'p'
+glyph1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+glyph1Display.SelectOrientationVectors = 'u'
+glyph1Display.ScaleFactor = 0.20473413467407228
+glyph1Display.SelectScaleArray = 'None'
+glyph1Display.GlyphType = 'Arrow'
+glyph1Display.GlyphTableIndexArray = 'None'
+glyph1Display.GaussianRadius = 0.010236706733703613
+glyph1Display.SetScaleArray = ['POINTS', 'p']
+glyph1Display.ScaleTransferFunction = 'PiecewiseFunction'
+glyph1Display.OpacityArray = ['POINTS', 'p']
+glyph1Display.OpacityTransferFunction = 'PiecewiseFunction'
+glyph1Display.DataAxesGrid = 'GridAxesRepresentation'
+glyph1Display.PolarAxes = 'PolarAxesRepresentation'
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+glyph1Display.OSPRayScaleFunction.Points = [293.1499938964844, 0.0, 0.5, 0.0, 913.1500244140625, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+glyph1Display.ScaleTransferFunction.Points = [-1775.42626953125, 0.0, 0.5, 0.0, 1031.2987060546875, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+glyph1Display.OpacityTransferFunction.Points = [-1775.42626953125, 0.0, 0.5, 0.0, 1031.2987060546875, 1.0, 0.5, 0.0]
+
+# reset view to fit data
+renderView1.ResetCamera(False)
+
+#changing interaction mode based on data extents
+renderView1.InteractionMode = '3D'
+
+# update the view to ensure updated data information
+renderView1.Update()
+
+# set scalar coloring
+ColorBy(glyph1Display, ('POINTS', 'u', 'Magnitude'))
+
+# rescale color and/or opacity maps used to include current data range
+glyph1Display.RescaleTransferFunctionToDataRange(True, False)
+
+# show color bar/color legend
+glyph1Display.SetScalarBarVisibility(renderView1, True)
+
+# Properties modified on glyph1
+glyph1.ScaleFactor = 0.047520000457763674
+
+# update the view to ensure updated data information
+renderView1.Update()
+
+# layout/tab size in pixels
+layout1.SetSize(1612, 552)
+
+# current camera placement for renderView1
+renderView1.CameraPosition = [0.5336493253707886, 2.3663043975830078e-05, 2.0509448925681455]
+renderView1.CameraFocalPoint = [0.5336493253707886, 2.3663043975830078e-05, 0.0]
+renderView1.CameraParallelScale = 1.1378675261551723
+
+# save screenshot
+SaveScreenshot(path_to_pngFile)
+
+#================================================================
+# addendum: following script captures some of the application
+# state to faithfully reproduce the visualization during playback
+#================================================================
+
+#--------------------------------
+# saving layout sizes for layouts
+
+# layout/tab size in pixels
+layout1.SetSize(1612, 552)
+
+#-----------------------------------
+# saving camera placements for views
+
+# current camera placement for renderView1
+renderView1.CameraPosition = [0.5336493253707886, 2.3663043975830078e-05, 2.0509448925681455]
+renderView1.CameraFocalPoint = [0.5336493253707886, 2.3663043975830078e-05, 0.0]
+renderView1.CameraParallelScale = 1.1378675261551723
