@@ -68,3 +68,13 @@ D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Mes
 D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.csproj.CoreCompileInputs.cache
 D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.exe
 D:\nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\potFlow\potFlow_Meshing\potFlow Meshing_v0.3\obj\Debug\potFlow Meshing_v0.3.pdb
+D:\Nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\git\Meshing\src\bin\Debug\potFlow Meshing_v0.3.exe.config
+D:\Nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\git\Meshing\src\bin\Debug\potFlow Meshing_v0.3.exe
+D:\Nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\git\Meshing\src\bin\Debug\potFlow Meshing_v0.3.pdb
+D:\Nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\git\Meshing\src\obj\Debug\potFlow Meshing_v0.3.csproj.AssemblyReference.cache
+D:\Nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\git\Meshing\src\obj\Debug\potFlow_Meshing_v0._3.Form1.resources
+D:\Nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\git\Meshing\src\obj\Debug\potFlow_Meshing_v0._3.Properties.Resources.resources
+D:\Nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\git\Meshing\src\obj\Debug\potFlow Meshing_v0.3.csproj.GenerateResource.cache
+D:\Nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\git\Meshing\src\obj\Debug\potFlow Meshing_v0.3.csproj.CoreCompileInputs.cache
+D:\Nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\git\Meshing\src\obj\Debug\potFlow Meshing_v0.3.exe
+D:\Nejc\Documents\MAG\potencialni_tok_preko_profilov_PROJEKT\git\Meshing\src\obj\Debug\potFlow Meshing_v0.3.pdb

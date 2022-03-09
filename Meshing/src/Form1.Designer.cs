@@ -70,6 +70,9 @@ namespace potFlow_Meshing_v0._3
 			this.label2 = new System.Windows.Forms.Label();
 			this.tbDx = new System.Windows.Forms.TextBox();
 			this.gbNACAAirfoil_radius = new System.Windows.Forms.GroupBox();
+			this.tbU = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
 			this.lbM = new System.Windows.Forms.Label();
 			this.lbNACANum = new System.Windows.Forms.Label();
 			this.cbTrailingEdge = new System.Windows.Forms.ComboBox();
@@ -79,15 +82,10 @@ namespace potFlow_Meshing_v0._3
 			this.label3 = new System.Windows.Forms.Label();
 			this.lbAlpha = new System.Windows.Forms.Label();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
-			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
 			this.btnApplyGeo = new System.Windows.Forms.Button();
-			this.lbChooseGeomerty = new System.Windows.Forms.Label();
 			this.cbGeometry = new System.Windows.Forms.ComboBox();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.tbU = new System.Windows.Forms.TextBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dsPoints)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dtPoints)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dtPikeBindingSource)).BeginInit();
@@ -110,7 +108,6 @@ namespace potFlow_Meshing_v0._3
 			this.gbNumericalParameters.SuspendLayout();
 			this.gbNACAAirfoil_radius.SuspendLayout();
 			this.groupBox4.SuspendLayout();
-			this.statusStrip1.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -386,6 +383,7 @@ namespace potFlow_Meshing_v0._3
 			// 
 			// gbNumericalParameters
 			// 
+			this.gbNumericalParameters.Controls.Add(this.label6);
 			this.gbNumericalParameters.Controls.Add(this.label1);
 			this.gbNumericalParameters.Controls.Add(this.tbMeshScale);
 			this.gbNumericalParameters.Controls.Add(this.label2);
@@ -454,6 +452,32 @@ namespace potFlow_Meshing_v0._3
 			this.gbNACAAirfoil_radius.TabIndex = 9;
 			this.gbNACAAirfoil_radius.TabStop = false;
 			this.gbNACAAirfoil_radius.Text = "NACA Airfoil";
+			// 
+			// tbU
+			// 
+			this.tbU.Location = new System.Drawing.Point(99, 106);
+			this.tbU.Name = "tbU";
+			this.tbU.Size = new System.Drawing.Size(43, 20);
+			this.tbU.TabIndex = 10;
+			this.tbU.Text = "50";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(148, 109);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(25, 13);
+			this.label4.TabIndex = 12;
+			this.label4.Text = "m/s";
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(3, 109);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(77, 13);
+			this.label5.TabIndex = 11;
+			this.label5.Text = "Inlet velocity U";
 			// 
 			// lbM
 			// 
@@ -531,9 +555,7 @@ namespace potFlow_Meshing_v0._3
 			// 
 			// groupBox4
 			// 
-			this.groupBox4.Controls.Add(this.statusStrip1);
 			this.groupBox4.Controls.Add(this.btnApplyGeo);
-			this.groupBox4.Controls.Add(this.lbChooseGeomerty);
 			this.groupBox4.Controls.Add(this.cbGeometry);
 			this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
 			this.groupBox4.Location = new System.Drawing.Point(1141, 503);
@@ -541,23 +563,7 @@ namespace potFlow_Meshing_v0._3
 			this.groupBox4.Size = new System.Drawing.Size(470, 150);
 			this.groupBox4.TabIndex = 2;
 			this.groupBox4.TabStop = false;
-			this.groupBox4.Text = "GEOMETRY ";
-			// 
-			// statusStrip1
-			// 
-			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-			this.statusStrip1.Location = new System.Drawing.Point(3, 125);
-			this.statusStrip1.Name = "statusStrip1";
-			this.statusStrip1.Size = new System.Drawing.Size(464, 22);
-			this.statusStrip1.TabIndex = 11;
-			this.statusStrip1.Text = "statusStrip1";
-			// 
-			// toolStripStatusLabel1
-			// 
-			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-			this.toolStripStatusLabel1.Size = new System.Drawing.Size(66, 17);
-			this.toolStripStatusLabel1.Text = "v1911-2021";
+			this.groupBox4.Text = "Geometry";
 			// 
 			// btnApplyGeo
 			// 
@@ -568,16 +574,6 @@ namespace potFlow_Meshing_v0._3
 			this.btnApplyGeo.Text = "Apply";
 			this.btnApplyGeo.UseVisualStyleBackColor = true;
 			this.btnApplyGeo.Click += new System.EventHandler(this.btnApplyGeo_Click);
-			// 
-			// lbChooseGeomerty
-			// 
-			this.lbChooseGeomerty.AutoSize = true;
-			this.lbChooseGeomerty.Cursor = System.Windows.Forms.Cursors.Default;
-			this.lbChooseGeomerty.Location = new System.Drawing.Point(3, 81);
-			this.lbChooseGeomerty.Name = "lbChooseGeomerty";
-			this.lbChooseGeomerty.Size = new System.Drawing.Size(150, 13);
-			this.lbChooseGeomerty.TabIndex = 9;
-			this.lbChooseGeomerty.Text = "CHOOSE GEOMETRY TYPE!";
 			// 
 			// cbGeometry
 			// 
@@ -608,31 +604,15 @@ namespace potFlow_Meshing_v0._3
 			this.tableLayoutPanel1.Size = new System.Drawing.Size(1319, 661);
 			this.tableLayoutPanel1.TabIndex = 0;
 			// 
-			// tbU
+			// label6
 			// 
-			this.tbU.Location = new System.Drawing.Point(99, 106);
-			this.tbU.Name = "tbU";
-			this.tbU.Size = new System.Drawing.Size(43, 20);
-			this.tbU.TabIndex = 10;
-			this.tbU.Text = "50";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(148, 109);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(25, 13);
-			this.label4.TabIndex = 12;
-			this.label4.Text = "m/s";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(3, 109);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(77, 13);
-			this.label5.TabIndex = 11;
-			this.label5.Text = "Inlet velocity U";
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(148, 30);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(15, 13);
+			this.label6.TabIndex = 13;
+			this.label6.Text = "m";
+			this.label6.Visible = false;
 			// 
 			// Form1
 			// 
@@ -669,9 +649,6 @@ namespace potFlow_Meshing_v0._3
 			this.gbNACAAirfoil_radius.ResumeLayout(false);
 			this.gbNACAAirfoil_radius.PerformLayout();
 			this.groupBox4.ResumeLayout(false);
-			this.groupBox4.PerformLayout();
-			this.statusStrip1.ResumeLayout(false);
-			this.statusStrip1.PerformLayout();
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 
@@ -716,10 +693,7 @@ namespace potFlow_Meshing_v0._3
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbAlpha;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Button btnApplyGeo;
-        private System.Windows.Forms.Label lbChooseGeomerty;
         private System.Windows.Forms.ComboBox cbGeometry;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 		public System.Windows.Forms.DataVisualization.Charting.Chart meshChart;
@@ -729,6 +703,7 @@ namespace potFlow_Meshing_v0._3
 		private System.Windows.Forms.TextBox tbU;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label6;
 	}
 }
 

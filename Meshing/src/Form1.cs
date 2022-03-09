@@ -1539,7 +1539,6 @@ namespace potFlow_Meshing_v0._3
                 lbAlpha.Visible = false;
                 lbTrailingEdge.Visible = false;
                 lbM.Visible = true;
-                lbChooseGeomerty.Visible = false;
                 tbAlpha.Visible = false;
                 cbTrailingEdge.Visible = false;
                 label3.Visible = false;
@@ -1554,7 +1553,6 @@ namespace potFlow_Meshing_v0._3
                 lbAlpha.Visible = true;
                 lbTrailingEdge.Visible = true;
                 lbM.Visible = false;
-                lbChooseGeomerty.Visible = false;
                 tbAlpha.Visible = true;
                 cbTrailingEdge.Visible = true;
                 label3.Visible = true;
@@ -1839,6 +1837,8 @@ namespace potFlow_Meshing_v0._3
             double NACAn = Convert.ToDouble(tbNACAn_radius.Text);
             string te = cbTrailingEdge.Text;
             bool restart = false;
+            double dx = Convert.ToDouble(tbDx.Text);
+            double D = Convert.ToDouble(tbMeshScale.Text);
 
             if (cbGeometry.Text == "NACA Airfoil")
 			{
@@ -1846,7 +1846,7 @@ namespace potFlow_Meshing_v0._3
                 {
                     tbNACAn_radius.BackColor = Color.Red;
                     tbNACAn_radius.ForeColor = Color.White;
-                    MessageBox.Show("Invalid NACA series of digits!");
+                    MessageBox.Show("Invalid NACA series of digits");
                     restart = true;
                 }
 
@@ -1854,7 +1854,7 @@ namespace potFlow_Meshing_v0._3
                 {
                     cbTrailingEdge.BackColor = Color.Red;
                     cbTrailingEdge.ForeColor = Color.White;
-                    MessageBox.Show("Trailing edge undefined!");
+                    MessageBox.Show("Trailing edge undefined");
                     restart = true;
                 }
 
@@ -1862,7 +1862,7 @@ namespace potFlow_Meshing_v0._3
                 {
                     tbMeshScale.BackColor = Color.Red;
                     tbMeshScale.ForeColor = Color.White;
-                    MessageBox.Show("Mesh scale factor must be greater than 0!");
+                    MessageBox.Show("Mesh scale factor must be greater than 0");
                     restart = true;
                 }
 
@@ -1874,7 +1874,21 @@ namespace potFlow_Meshing_v0._3
 				{
                     tbNACAn_radius.BackColor = Color.Red;
                     tbNACAn_radius.ForeColor = Color.White;
-                    MessageBox.Show("Invalid cylinder radius!");
+                    MessageBox.Show("Invalid cylinder radius");
+                    restart = true;
+                }
+                if(NACAn <= dx)
+				{
+                    tbNACAn_radius.BackColor = Color.Red;
+                    tbNACAn_radius.ForeColor = Color.White;
+                    MessageBox.Show("Cylinder radius must be larger than mesh step");
+                    restart = true;
+                }
+                if(2*NACAn > A*D)
+				{
+                    tbNACAn_radius.BackColor = Color.Red;
+                    tbNACAn_radius.ForeColor = Color.White;
+                    MessageBox.Show("Cylinder radius exceeds domain boundaries!" + "\nSet larger mesh scale");
                     restart = true;
                 }
             }
