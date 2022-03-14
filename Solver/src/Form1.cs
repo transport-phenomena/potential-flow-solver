@@ -742,7 +742,7 @@ namespace potFlow_Solver_v0._1
 			//create pressure field
 			double U0 = getU();
 			double pressure, vel;
-			double rho = 1.2723; //air density at 0°C 1bar, gotten from ~~ KRAUT B., Krautov strojniški priročnik, Ljubljana: Buča, 2017 (sixteenth revised edition) ~~
+			double rho = 1.252; //air density at 0°C 1bar, gotten from ~~ KRAUT B., Krautov strojniški priročnik, Ljubljana: Buča, 2017 (sixteenth revised edition) ~~
 			foreach(DataRow dr in dataSet.Tables[3].Rows)
 			{
 				vel = Convert.ToDouble(dr[3]);

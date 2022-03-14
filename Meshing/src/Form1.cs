@@ -1274,7 +1274,7 @@ namespace potFlow_Meshing_v0._3
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("Are you sure you want to clear current mesh?", "Clear Mesh", MessageBoxButtons.YesNo);
+            var result = MessageBox.Show("Clear current mesh?", "Clear Mesh", MessageBoxButtons.YesNo);
 
             if (result == DialogResult.Yes)
             {
@@ -1326,6 +1326,8 @@ namespace potFlow_Meshing_v0._3
 
         private void btnExport_Click(object sender, EventArgs e)
 		{
+            Application.UseWaitCursor = true;
+
             if (cbGeometry.Text == "NACA Airfoil")
 			{
                 if (dgvPoints.Rows.Count > 0)
@@ -1509,6 +1511,8 @@ namespace potFlow_Meshing_v0._3
                     MessageBox.Show("No Record To Export", "Info");
                 }
             }
+
+            Application.UseWaitCursor = false;
         }
 
         private void DeleteNanPoints()
@@ -1542,6 +1546,7 @@ namespace potFlow_Meshing_v0._3
                 tbAlpha.Visible = false;
                 cbTrailingEdge.Visible = false;
                 label3.Visible = false;
+                lbChInfo.Visible = false;
                 //tbSt.Visible = false;
                 //lbSt.Visible = false;
             }
@@ -1832,7 +1837,7 @@ namespace potFlow_Meshing_v0._3
             }
         }
 
-        private void CheckInputData()
+        private bool CheckInputData()
 		{
             double NACAn = Convert.ToDouble(tbNACAn_radius.Text);
             string te = cbTrailingEdge.Text;
@@ -1842,7 +1847,7 @@ namespace potFlow_Meshing_v0._3
 
             if (cbGeometry.Text == "NACA Airfoil")
 			{
-                if (NACAn > 9999 | NACAn < 0001)
+                if (NACAn > 9999 | NACAn < 0001) //ensures 4 digit NACA series
                 {
                     tbNACAn_radius.BackColor = Color.Red;
                     tbNACAn_radius.ForeColor = Color.White;
@@ -1850,7 +1855,7 @@ namespace potFlow_Meshing_v0._3
                     restart = true;
                 }
 
-                if (te == "")
+                if (te == "") //ensures trailing edge isnt left undefined
                 {
                     cbTrailingEdge.BackColor = Color.Red;
                     cbTrailingEdge.ForeColor = Color.White;
@@ -1858,18 +1863,18 @@ namespace potFlow_Meshing_v0._3
                     restart = true;
                 }
 
-                if (tbMeshScale.Text == "0")
-                {
-                    tbMeshScale.BackColor = Color.Red;
-                    tbMeshScale.ForeColor = Color.White;
-                    MessageBox.Show("Mesh scale factor must be greater than 0");
+                if(Convert.ToDouble(tbDx.Text) >= 1) //ensures dx is lesser than chord lenght
+				{
+                    tbDx.BackColor = Color.Red;
+                    tbDx.ForeColor = Color.White;
+                    MessageBox.Show("Mesh step must be smaller than chord lenght (= 1)");
                     restart = true;
                 }
-
             }
 
             if (cbGeometry.Text == "Cylinder")
 			{
+                // restrictions of dx with respect to radius
                 if (NACAn <= 0)
 				{
                     tbNACAn_radius.BackColor = Color.Red;
@@ -1891,20 +1896,95 @@ namespace potFlow_Meshing_v0._3
                     MessageBox.Show("Cylinder radius exceeds domain boundaries!" + "\nSet larger mesh scale");
                     restart = true;
                 }
+                /////
+            }
+
+            if (tbMeshScale.Text == "0") //ensures mesh scale greater than 0
+            {
+                tbMeshScale.BackColor = Color.Red;
+                tbMeshScale.ForeColor = Color.White;
+                MessageBox.Show("Mesh scale factor must be greater than 0");
+                restart = true;
+            }
+            if (Convert.ToDouble(tbDx.Text) == 0) //ensures dx is bigger than 0
+            {
+                tbDx.BackColor = Color.Red;
+                tbDx.ForeColor = Color.White;
+                MessageBox.Show("Mesh step must be larger than 0");
+                restart = true;
             }
 
             if (restart == true)
             {
-                Application.Restart();
+                //Application.Restart();
+                return true;
             }
+            else
+			{
+                tbNACAn_radius.ForeColor = Color.Black;
+                cbTrailingEdge.ForeColor = Color.Black;
+                tbMeshScale.ForeColor = Color.Black;
+                tbDx.ForeColor = Color.Black;
 
+                tbDx.BackColor = Color.White;
+                tbNACAn_radius.BackColor = Color.White;
+                cbTrailingEdge.BackColor = Color.White;
+                tbMeshScale.BackColor = Color.White;
+
+                return false;
+			}
+
+        }
+
+        private void CalculateRe()
+		{
+            double u = Convert.ToDouble(tbU.Text);
+            double ch;
+
+            if(cbGeometry.Text == "Cylinder")
+			{
+                ch = Convert.ToDouble(tbNACAn_radius.Text);
+            }
+            else
+			{
+                ch = 1;
+			}
+
+            double kinViscs = 13.9e-6; //kin. viscosity at 0°C 1bar, gotten from ~~ KRAUT B., Krautov strojniški priročnik, Ljubljana: Buča, 2017 (sixteenth revised edition) ~~
+            double Re;
+            int ReDisp;
+
+            Re = u * ch / kinViscs;
+            ReDisp = (int)Re;
+
+            tbRe.Text = ReDisp.ToString();
         }
 
         async void btRun_Click(object sender, EventArgs e)
         {
             try
             {
-                CheckInputData();
+                bool restart;
+                Application.UseWaitCursor = true;
+
+                restart = CheckInputData();
+                if(restart == true)
+				{
+                    Application.UseWaitCursor = false;
+                    tbNACAn_radius.BackColor = Color.White;
+                    cbTrailingEdge.BackColor = Color.White;
+                    tbMeshScale.BackColor = Color.White;
+                    tbDx.BackColor = Color.White;
+
+                    tbDx.ForeColor = Color.Black;
+                    tbNACAn_radius.ForeColor = Color.Black;
+                    cbTrailingEdge.ForeColor = Color.Black;
+                    tbMeshScale.ForeColor = Color.Black;
+
+                    return;
+				}
+
+                CalculateRe();
 
                 if (cbGeometry.Text == "NACA Airfoil")
                 {
@@ -2058,15 +2138,19 @@ namespace potFlow_Meshing_v0._3
                     rtbInfo.AppendText("\n");
                     rtbInfo.AppendText("Elapsed time: " + ts);
                 }
-		}
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: unable to create mesh with such parameters, try changing mesh step");
-                MessageBox.Show(ex.Message);
-                Application.Restart();
-            }
 
-        }
+                Application.UseWaitCursor = false;
+		    }
+			catch
+			{
+				MessageBox.Show("Error: unable to create mesh with such parameters, try changing mesh step");
+				//MessageBox.Show(ex.Message);
+                //Application.Restart();
+                btnClear.PerformClick();
+                Application.UseWaitCursor = false;
+                return;
+			}
+		}
         void changeLine(RichTextBox rtbInfo, int line, string text)
         {
             //await Task.Delay(10);
