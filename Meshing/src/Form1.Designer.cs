@@ -65,11 +65,15 @@ namespace potFlow_Meshing_v0._3
 			this.btnClear = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.gbNumericalParameters = new System.Windows.Forms.GroupBox();
+			this.tbMeshScale = new System.Windows.Forms.ComboBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.tbDx = new System.Windows.Forms.TextBox();
 			this.gbNACAAirfoil_radius = new System.Windows.Forms.GroupBox();
+			this.lbChInfo = new System.Windows.Forms.Label();
+			this.tbRe = new System.Windows.Forms.TextBox();
+			this.lbRe = new System.Windows.Forms.Label();
 			this.tbU = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
@@ -85,10 +89,6 @@ namespace potFlow_Meshing_v0._3
 			this.btnApplyGeo = new System.Windows.Forms.Button();
 			this.cbGeometry = new System.Windows.Forms.ComboBox();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.tbRe = new System.Windows.Forms.TextBox();
-			this.lbRe = new System.Windows.Forms.Label();
-			this.lbChInfo = new System.Windows.Forms.Label();
-			this.tbMeshScale = new System.Windows.Forms.ComboBox();
 			((System.ComponentModel.ISupportInitialize)(this.dsPoints)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dtPoints)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dtPikeBindingSource)).BeginInit();
@@ -363,7 +363,7 @@ namespace potFlow_Meshing_v0._3
 			this.btnExport.Name = "btnExport";
 			this.btnExport.Size = new System.Drawing.Size(85, 81);
 			this.btnExport.TabIndex = 0;
-			this.btnExport.Text = "Export \r\nMesh\r\n";
+			this.btnExport.Text = "Export \r\nMesh\r\n to Folder";
 			this.btnExport.UseVisualStyleBackColor = true;
 			this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
 			// 
@@ -403,6 +403,22 @@ namespace potFlow_Meshing_v0._3
 			this.gbNumericalParameters.TabStop = false;
 			this.gbNumericalParameters.Text = "Numerical Parameters";
 			// 
+			// tbMeshScale
+			// 
+			this.tbMeshScale.FormattingEnabled = true;
+			this.tbMeshScale.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+			this.tbMeshScale.Location = new System.Drawing.Point(99, 56);
+			this.tbMeshScale.Name = "tbMeshScale";
+			this.tbMeshScale.Size = new System.Drawing.Size(43, 21);
+			this.tbMeshScale.Sorted = true;
+			this.tbMeshScale.TabIndex = 14;
+			this.tbMeshScale.Text = "2";
+			// 
 			// label6
 			// 
 			this.label6.AutoSize = true;
@@ -436,7 +452,7 @@ namespace potFlow_Meshing_v0._3
 			this.tbDx.Name = "tbDx";
 			this.tbDx.Size = new System.Drawing.Size(43, 20);
 			this.tbDx.TabIndex = 0;
-			this.tbDx.Text = "0,1";
+			this.tbDx.Text = "0,01";
 			this.tbDx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbDx_KeyPress);
 			// 
 			// gbNACAAirfoil_radius
@@ -462,6 +478,33 @@ namespace potFlow_Meshing_v0._3
 			this.gbNACAAirfoil_radius.TabIndex = 9;
 			this.gbNACAAirfoil_radius.TabStop = false;
 			this.gbNACAAirfoil_radius.Text = "NACA Airfoil";
+			// 
+			// lbChInfo
+			// 
+			this.lbChInfo.AutoSize = true;
+			this.lbChInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbChInfo.Location = new System.Drawing.Point(3, 187);
+			this.lbChInfo.Name = "lbChInfo";
+			this.lbChInfo.Size = new System.Drawing.Size(114, 13);
+			this.lbChInfo.TabIndex = 19;
+			this.lbChInfo.Text = "Chord length = 1 m";
+			// 
+			// tbRe
+			// 
+			this.tbRe.Location = new System.Drawing.Point(99, 158);
+			this.tbRe.Name = "tbRe";
+			this.tbRe.ReadOnly = true;
+			this.tbRe.Size = new System.Drawing.Size(64, 20);
+			this.tbRe.TabIndex = 16;
+			// 
+			// lbRe
+			// 
+			this.lbRe.AutoSize = true;
+			this.lbRe.Location = new System.Drawing.Point(3, 161);
+			this.lbRe.Name = "lbRe";
+			this.lbRe.Size = new System.Drawing.Size(88, 13);
+			this.lbRe.TabIndex = 17;
+			this.lbRe.Text = "Re number (air) =";
 			// 
 			// tbU
 			// 
@@ -613,49 +656,6 @@ namespace potFlow_Meshing_v0._3
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 600F));
 			this.tableLayoutPanel1.Size = new System.Drawing.Size(1319, 661);
 			this.tableLayoutPanel1.TabIndex = 0;
-			// 
-			// tbRe
-			// 
-			this.tbRe.Location = new System.Drawing.Point(99, 158);
-			this.tbRe.Name = "tbRe";
-			this.tbRe.ReadOnly = true;
-			this.tbRe.Size = new System.Drawing.Size(64, 20);
-			this.tbRe.TabIndex = 16;
-			// 
-			// lbRe
-			// 
-			this.lbRe.AutoSize = true;
-			this.lbRe.Location = new System.Drawing.Point(3, 161);
-			this.lbRe.Name = "lbRe";
-			this.lbRe.Size = new System.Drawing.Size(88, 13);
-			this.lbRe.TabIndex = 17;
-			this.lbRe.Text = "Re number (air) =";
-			// 
-			// lbChInfo
-			// 
-			this.lbChInfo.AutoSize = true;
-			this.lbChInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbChInfo.Location = new System.Drawing.Point(3, 187);
-			this.lbChInfo.Name = "lbChInfo";
-			this.lbChInfo.Size = new System.Drawing.Size(114, 13);
-			this.lbChInfo.TabIndex = 19;
-			this.lbChInfo.Text = "Chord length = 1 m";
-			// 
-			// tbMeshScale
-			// 
-			this.tbMeshScale.FormattingEnabled = true;
-			this.tbMeshScale.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-			this.tbMeshScale.Location = new System.Drawing.Point(99, 56);
-			this.tbMeshScale.Name = "tbMeshScale";
-			this.tbMeshScale.Size = new System.Drawing.Size(43, 21);
-			this.tbMeshScale.Sorted = true;
-			this.tbMeshScale.TabIndex = 14;
-			this.tbMeshScale.Text = "1";
 			// 
 			// Form1
 			// 
