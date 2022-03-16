@@ -428,6 +428,9 @@ namespace potFlow_Solver_v0._1
 			rtbInfo.AppendText("\nRUN STARTED: " + DateTime.Now);
 			rtbInfo.AppendText("\n=========================================");
 
+			this.Update();
+			Application.UseWaitCursor = true;
+
 			var systemOfEq = GenerateSystemOfEq();
 			Matrix<double> A = SparseMatrix.OfMatrix(systemOfEq.Item1);
 			Vector<double> b = SparseVector.OfVector(systemOfEq.Item2);
@@ -473,6 +476,8 @@ namespace potFlow_Solver_v0._1
 				rtbInfo.AppendText("\nRUN ENDED. Elapsed time: " + elapsedTime);
 				rtbInfo.AppendText("\n-----------------------------------------");
 			}
+
+			Application.UseWaitCursor = false;
 			return psi;
 		}
 
@@ -1222,13 +1227,21 @@ namespace potFlow_Solver_v0._1
 							int indexOfSubstring1 = sfd.FileName.IndexOf(substring1);
 							pngPathFinal = sfd.FileName.Remove(indexOfSubstring1, substring1.Length);
 
-							pyCode[100] = "\nSaveScreenshot(r'" + pngPathFinal + "_u_scalarField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
-							pyCode[133] = "\nSaveScreenshot(r'" + pngPathFinal + "_ux_scalarField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
-							pyCode[166] = "\nSaveScreenshot(r'" + pngPathFinal + "_uy_scalarField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
-							pyCode[199] = "\nSaveScreenshot(r'" + pngPathFinal + "_p_scalarField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
-							pyCode[229] = "\nSaveScreenshot(r'" + pngPathFinal + "_psi_scalarField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
-							pyCode[307] = "\nSaveScreenshot(r'" + pngPathFinal + "_streamlines.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
-							pyCode[393] = "\nSaveScreenshot(r'" + pngPathFinal + "_u_vectorField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
+							pyCode[95] = "\nSaveScreenshot(r'" + pngPathFinal + "_u_scalarField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
+							pyCode[128] = "\nSaveScreenshot(r'" + pngPathFinal + "_ux_scalarField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
+							pyCode[158] = "\nSaveScreenshot(r'" + pngPathFinal + "_uy_scalarField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
+							pyCode[188] = "\nSaveScreenshot(r'" + pngPathFinal + "_p_scalarField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
+							pyCode[215] = "\nSaveScreenshot(r'" + pngPathFinal + "_psi_scalarField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
+							pyCode[312] = "\nSaveScreenshot(r'" + pngPathFinal + "_streamlines.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
+							pyCode[396] = "\nSaveScreenshot(r'" + pngPathFinal + "_u_vectorField.png', renderView1, ImageResolution=[3224, 1104], TransparentBackground=1)";
+
+							//determine psi values for contour based on U and y
+							string contourLine = createValuesforContour();
+							pyCode[244] = contourLine;
+
+							//set vector field scale factor
+							string vectorScaleLine = createVectorScale();
+							pyCode[384] = vectorScaleLine;
 
 							string substring = "_RES.vtu";
 							int indexOfSubstring = sfd.FileName.IndexOf(substring);
@@ -1275,6 +1288,53 @@ namespace potFlow_Solver_v0._1
 				}
 			}
 			*/
+		}
+
+		private string createVectorScale()
+		{
+			double D = Convert.ToDouble(dataSet.Tables[0].Rows[0][2]) / 0.5;
+			double sc = 0.05 * D;
+
+			string g = "glyph1.ScaleFactor = " + sc.ToString();
+			string G = g.Replace(',', '.');
+
+			return G;
+		}
+
+		private string createValuesforContour()
+		{
+			double start = Convert.ToDouble(dataSet.Tables[0].Rows[0][6]);
+			double[] values = new double[50];
+			for (int q = 0; q < 50; q++)
+			{
+				if(-start + (2 * q * start / values.Length) == 0)
+				{
+					values[q] = -start + (2 * (q + 1) * start / values.Length);
+					continue;
+				}
+				else
+				{
+					values[q] = -start + (2 * q * start / values.Length);
+				}
+			}
+
+			string contourLines1 = "contour1.Isosurfaces = [";
+			string contourLines2 = Convert.ToString(values[0]) + ", ";
+			for (int p = 1; p < 50; p++)
+			{
+				if(p == 49)
+				{
+					contourLines2 = contourLines2 + Convert.ToString(Convert.ToString(values[p]));
+				}
+				else
+				{
+					contourLines2 = contourLines2 + Convert.ToString(Convert.ToString(values[p])) + ", ";
+				}
+			}
+
+			string contourLines = contourLines1 + contourLines2 + "]";
+
+			return contourLines;
 		}
 
 		#endregion
